@@ -1,5 +1,14 @@
 
-const myLibrary = [];
+const myLibrary = [
+    {
+        id: 5,
+        title: "smile",
+        author: "jenna",
+        pages: 5,
+        read: true
+    }
+];
+
 
 function Book(id, title, author, pages, read) {
     if (!new.target){
@@ -15,4 +24,6 @@ function Book(id, title, author, pages, read) {
 function addBookToLibrary(title, author, pages, read){
     myLibrary.push(crypto.randomUUID(), title, author, pages, read);
 }
+
+
 
